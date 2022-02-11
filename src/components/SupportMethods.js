@@ -33,18 +33,6 @@ export default function SupportMethods() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion expanded={true} disabled>
-          <AccordionSummary>
-            <Typography>CMS자동이체</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              금융결제원에 출금을 의뢰하는 방법으로 CMS신청서를 작성하셔서
-              이메일 또는 우편으로 보내주시면 직접 은행에 나가는 불편없이
-              후원하실 수 있습니다.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
       </CardContent>
     </Card>
   );
