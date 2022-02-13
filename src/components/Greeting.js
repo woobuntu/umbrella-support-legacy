@@ -30,8 +30,22 @@ export default function Greeting() {
           이루어가는데 있어 여러분의 정성어린 관심과 애정은 큰 도움이 될
           것입니다.
         </Typography>
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <PaidIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="소득공제영수증"
+              secondary="후원금은 법인세법 24조 및 소득세법 34조에 의해
+          연말정산시 소득공제를 받으실 수 있습니다.(기부금영수증 발급)"
+            />
+          </ListItem>
+        </List>
         <List
-          subheader={<ListSubheader component="div">후원계좌</ListSubheader>}
+          subheader={
+            <ListSubheader component="div">법인 후원계좌</ListSubheader>
+          }
         >
           <ListItem>
             <ListItemIcon>
@@ -43,17 +57,28 @@ export default function Greeting() {
             <ListItemIcon>
               <AccountBalanceIcon />
             </ListItemIcon>
-            <ListItemText primary="농협" secondary="301-0277-9280-31" />
+            <ListItemText primary="농협" secondary="355-0045-2976-33" />
+          </ListItem>
+        </List>
+        <List
+          subheader={
+            <ListSubheader component="div">보호작업장 후원계좌</ListSubheader>
+          }
+        >
+          <ListItem>
+            <ListItemIcon>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="예금주"
+              secondary="함께쓰는우산장애인보호작업장"
+            />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <PaidIcon />
+              <AccountBalanceIcon />
             </ListItemIcon>
-            <ListItemText
-              primary="소득공제영수증"
-              secondary="후원금은 법인세법 24조 및 소득세법 34조에 의해
-          연말정산시 소득공제를 받으실 수 있습니다.(기부금영수증 발급)"
-            />
+            <ListItemText primary="농협" secondary="301-0298-2530-21" />
           </ListItem>
         </List>
       </CardContent>
